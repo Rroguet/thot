@@ -1,6 +1,8 @@
 package presentation.model;
 
-public class Message {
+import java.io.Serializable;
+
+public class Message implements Serializable{
 	private int utilisateurId;
 	private String message;
 	//private Date date;

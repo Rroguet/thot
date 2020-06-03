@@ -35,6 +35,6 @@ public class Utilisateur implements Serializable{
 	}
 	
 	public String getConversationList(){
-		return conversations.toString();
+		return "";
 	}
 }
