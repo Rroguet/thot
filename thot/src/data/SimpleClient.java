@@ -14,8 +14,11 @@ public class SimpleClient {
 			output.writeObject(login);		
 			output.writeObject(passWord);
 			Utilisateur u = (Utilisateur) input.readObject();	
-			if(u != null)System.out.println("login as: " + u.getFirstName() + " " + u.getLastName());
-			else System.out.println("erreur login ou passWord invalide");
+			if(u != null) {
+				System.out.println("login as: " + u.getFirstName() + " " + u.getLastName());
+				if(u.getConversationList()!=null) System.out.println("nombre de conv disponible:"+u.getConversationList().size());
+			}
+			else System.out.println("erreur login ou pass word invalide");
 			return u;
 		} catch  (UnknownHostException uhe) {
 			uhe.printStackTrace();
