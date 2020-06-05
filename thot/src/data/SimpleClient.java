@@ -9,28 +9,12 @@ public class SimpleClient {
 	private ObjectInputStream input;
 	private Socket socket;
 	
-	public Utilisateur login(String login, String passWord) {			
-		try{
-			output.writeObject(login);		
-			output.writeObject(passWord);
-			Utilisateur u = (Utilisateur) input.readObject();	
-			if(u != null) {
-				System.out.println("login as: " + u.getFirstName() + " " + u.getLastName());
-				if(u.getConversationList()!=null) System.out.println("nombre de conv disponible:"+u.getConversationList().size());
-			}
-			else System.out.println("erreur login ou pass word invalide");
-			return u;
-		} catch  (UnknownHostException uhe) {
-			uhe.printStackTrace();
-		}
-		catch  (IOException ioe) {
-			ioe.printStackTrace();
-		}
-		catch  (ClassNotFoundException cnfe) {
-			cnfe.printStackTrace();
-		}
-
-		return null;
+	public ObjectOutputStream getOutput() {
+		return output;
+	}
+	
+	public ObjectInputStream getInput() {
+		return input;
 	}
 	
 	public void connect(String ip){

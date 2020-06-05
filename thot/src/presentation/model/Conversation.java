@@ -16,6 +16,14 @@ public class Conversation implements Serializable{
 		this.utilisateurs = utilisateurs;
 	}
 	
+	public int getConvId() {
+		return convId;
+	}
+	
+	public String getNameConv() {
+		return nameConv;
+	}
+	
 	
 	public int getCreateur() {
 		return createur;
