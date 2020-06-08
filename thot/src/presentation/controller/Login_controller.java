@@ -1,4 +1,4 @@
-package controller;
+package presentation.controller;
 
 import java.io.*;
 import java.net.UnknownHostException;
@@ -13,6 +13,7 @@ public class Login_controller {
 	public Login_controller(ObjectInputStream input, ObjectOutputStream output) {
 		this.input = input;
 		this.output = output;
+		user = login("test1","test1");
 	}
 	
 	public Utilisateur getUser() {

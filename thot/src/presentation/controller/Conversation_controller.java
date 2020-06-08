@@ -1,4 +1,4 @@
-package controller;
+package presentation.controller;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
