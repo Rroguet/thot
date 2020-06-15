@@ -1,4 +1,4 @@
-package controller;
+package presentation.controller;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -7,7 +7,18 @@ import java.net.UnknownHostException;
 import java.util.*;
 import presentation.model.*;
 
-public class Conversation_controller {
+public class Conversation_controller  extends AbstractConvController{
+	public Conversation_controller(AbstractModel am) {
+		super(am);
+	}
+	
+	public void control() {
+
+	}
+	
+	
+	
+	/*
 	private ObjectOutputStream output;
 	private ObjectInputStream input;
 	private Utilisateur u;
@@ -88,5 +99,5 @@ public class Conversation_controller {
 			cnfe.printStackTrace();
 		}
 	}
-	
+*/	
 }
