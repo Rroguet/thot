@@ -4,13 +4,23 @@ import java.io.Serializable;
 import java.util.*;
 
 public class Conversation implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	//private UUID convId
 	private int convId;
 	private List<Message> messages;
 	private List<Utilisateur> utilisateurs;
 	private String nameConv;
 	private int createur;
 
+<<<<<<< Upstream, based on branch 'master' of https://github.com/Rroguet/thot
 	public Conversation(String nameConv, int createur, List<Message> messages, List<Utilisateur> utilisateurs) {
+=======
+	public Conversation(int convId, String nameConv, int createur, List<Message> messages, List<Utilisateur> utilisateurs) {
+		this.convId = convId;
+>>>>>>> 41a61a4 conv construction and name setter
 		this.createur = createur;
 		this.messages = messages;
 		this.utilisateurs = utilisateurs;
@@ -20,7 +30,7 @@ public class Conversation implements Serializable{
 		return convId;
 	}
 	
-	public String getNameConv() {
+	public String getName() {
 		return nameConv;
 	}
 	
@@ -48,4 +58,12 @@ public class Conversation implements Serializable{
 	public void removeMessage(Message m) {
 		
 	}
+<<<<<<< Upstream, based on branch 'master' of https://github.com/Rroguet/thot
+=======
+
+	public void setName(String nameConv) {
+		this.nameConv=nameConv;
+	}
+
+>>>>>>> 41a61a4 conv construction and name setter
 }
