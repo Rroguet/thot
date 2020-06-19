@@ -1,5 +1,5 @@
 package presentation;
 
-public interface Observer {
+public interface ObserverLogin {
 	public void notif(String string);
 }

@@ -15,7 +15,6 @@ public class Conversation implements Serializable{
 	private String nameConv;
 	private int createur;
 
-
 	public Conversation(int convId, String nameConv, int createur, List<Message> messages, List<Utilisateur> utilisateurs) {
 		this.convId = convId;
 		this.nameConv = nameConv;
@@ -31,7 +30,6 @@ public class Conversation implements Serializable{
 	public String getName() {
 		return nameConv;
 	}
-	
 	
 	public int getCreateur() {
 		return createur;

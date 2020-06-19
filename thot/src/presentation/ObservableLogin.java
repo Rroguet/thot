@@ -1,7 +1,7 @@
 package presentation;
 
-public interface Observable {
-	public void addObserver(Observer obs);
+public interface ObservableLogin {
+	public void addObserver(ObserverLogin obs);
 	public void removeObserver();
 	public void notifyObserver(String string);
 }
