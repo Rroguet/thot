@@ -1,19 +1,18 @@
 package presentation.controller;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.net.UnknownHostException;
-import java.util.*;
-import presentation.model.*;
+import presentation.model.Utilisateur;
 
 public class Conversation_controller  extends AbstractConvController{
-	public Conversation_controller(AbstractModel am) {
-		super(am);
+	public Conversation_controller(Utilisateur user) {
+		super(user);
 	}
 	
+	
 	public void control() {
-
+		amc.getUserInfo();
+		amc.setListConv();
+		amc.getListConv();
+		conv.visible(true);
 	}
 	
 	
@@ -30,13 +29,6 @@ public class Conversation_controller  extends AbstractConvController{
 		this.u = u;
 	}
 	
-	public List<String> getConvList(){
-		return null;
-	}
-	
-	public void getConversation(int id) {
-		//currentConversation =;
-	}
 	
 	public void sendMessage(Message m) {
 		if(currentConversation == null) System.out.println("erreur aucun conversation ouverte");

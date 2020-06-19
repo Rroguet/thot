@@ -11,10 +11,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import presentation.Observer;
+import presentation.ObserverLogin;
 import presentation.controller.AbstractLoginController;
+import presentation.model.Utilisateur;
 
-public class viewtest extends JFrame implements Observer{
+public class viewtest extends JFrame implements ObserverLogin{
 	private AbstractLoginController alc;
 	private JFrame frame = new JFrame("Thot");
 	private JButton login = new JButton("login");
@@ -44,6 +45,7 @@ public class viewtest extends JFrame implements Observer{
 	public void notif(String string) {
 		JOptionPane.showMessageDialog(null, string);
 	}
+	public void userObs(Utilisateur u) {System.out.println("blablabla");}
 	
 	class loginListener implements ActionListener {
 		public void actionPerformed(ActionEvent b) {

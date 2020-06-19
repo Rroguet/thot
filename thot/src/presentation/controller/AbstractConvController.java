@@ -1,23 +1,30 @@
 package presentation.controller;
 
-import presentation.model.AbstractModel;
+import presentation.model.AbstractModelConv;
+import presentation.model.ModelConv;
 import presentation.model.Utilisateur;
 import presentation.view.viewConvtest;
 
 public abstract class AbstractConvController {
-	protected AbstractModel am;
+	protected AbstractModelConv amc;
 	protected viewConvtest conv;
 	
-	public AbstractConvController(AbstractModel am) {
-		this.am = am;
+	public AbstractConvController(Utilisateur user) {
+		amc = new ModelConv();
+		amc.setUser(user);
 		conv = new viewConvtest(this);
-		conv.visible(true);
-		am.removeObserver();
-		am.addObserver(conv);
+		amc.removeObserver();
+		amc.addObserver(conv);
+		control();
 	}
 	
-	public Utilisateur getUserInfo() {
-		return am.getUserInfo();
+	public void selectConv(int element) {
+		amc.setConv(element);
+		amc.getConv();
+	}
+	
+	public void convNull() {
+		amc.notifyObserver("erreur conv non trouvé");
 	}
 	
 	abstract void control();
