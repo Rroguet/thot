@@ -1,4 +1,4 @@
-package presentation.view;
+/*package presentation.view;
 
 import javax.swing.*;
 import javax.swing.event.*;
@@ -80,4 +80,4 @@ public class Conversation_GUI {
 
         return p;
     }
-}
+}*/

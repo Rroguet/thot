@@ -28,7 +28,7 @@ public abstract class AbstractLoginController {
 			am.notifyObserver("Veillez renseigner tous les champs");
 			return;
 		}
-		if(LoginBusiness.inscriptionSendServer(login, passWord, new Utilisateur(firstName,lastName,userName, 0, null)))
+		if(LoginBusiness.inscriptionSendServer(login, passWord, new Utilisateur(firstName,lastName,userName)))
 			am.notifyObserver("utilisateur sauvegardé");
 		else am.notifyObserver("erreur dans la sauvegarde");
 	}

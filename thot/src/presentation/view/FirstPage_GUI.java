@@ -1,4 +1,4 @@
-package presentation.view;
+/*package presentation.view;
 
 
 import java.awt.EventQueue;
@@ -43,7 +43,7 @@ public class FirstPage_GUI {
 				}
 			}
 		});
-	}*//
+	}
 
 
     public InscriptionPage() {
@@ -166,3 +166,4 @@ public class FirstPage_GUI {
         splitPane.setLeftComponent(lblNewLabel_6);
     }
 }
+*/
