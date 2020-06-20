@@ -73,7 +73,7 @@ public class Login_View extends JFrame implements ObserverLogin{
         panel_1.add(lblNewLabel_5);
 
         login = new JButton("Connexion");
-        login.setBounds(0, 171, 86, 23);
+        login.setBounds(0, 171, 95, 23);
         login.addActionListener(new loginListener());
         panel_1.add(login);
 
