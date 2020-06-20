@@ -16,7 +16,7 @@ public abstract class AbstractConvController {
 	protected AbstractModelConv amc;
 	protected Conv_View conv;
 	protected Utilisateur user;
-	private Timer timer;
+	private Timer timer = null;
 	
 	public AbstractConvController(Utilisateur user) {
 		amc = new ModelConv();
@@ -32,8 +32,10 @@ public abstract class AbstractConvController {
 		System.out.println("element : "+element);
 		amc.setConv(element, user);
 		amc.getConv();
-		timer = createTimer();
-        timer.start();
+		if(timer==null) {
+			timer = createTimer();
+			timer.start();
+		}
 	}
 	
 	public void convNull() {
