@@ -252,7 +252,6 @@ public class Conv_View extends JFrame implements ObserverConv{
 	public void updateListConv(List<String> l) {
 		listModelConv.removeAllElements();
 		for(String s: l) listModelConv.addElement(s);
-		System.out.println(listModelConv.getSize());
 	}
 		
 	public void updateConv(Conversation c, List<String> member) {

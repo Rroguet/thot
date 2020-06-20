@@ -5,7 +5,6 @@ import business.ConvBusiness;
 public class ModelConv extends AbstractModelConv{
 	public void setListConv(Utilisateur user){
 		listConv = ConvBusiness.listConv(user.getId());
-		System.out.println("list size :"+listConv.size());
 	}
 	
 	public void setConv(int idList, Utilisateur user) {

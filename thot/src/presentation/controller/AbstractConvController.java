@@ -24,13 +24,11 @@ public abstract class AbstractConvController {
 		conv = new Conv_View(this);
 		amc.removeObserver();
 		amc.addObserver(conv);
-		System.out.println("nb conv: "+user.getConversationList().size());
 		control();
 	}
 	
 	public void selectConv(int element) {
 		if(element<0) return;
-		System.out.println("element : "+element);
 		amc.setConv(element, user);
 		amc.getConv();
 		if(timer==null) {
