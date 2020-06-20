@@ -30,6 +30,7 @@ public class Login_View extends JFrame implements ObserverLogin{
 	JTextField prenomUser;
 	JTextField identifiant;
 	JTextField motDePasse;
+    JTextField pseudo;
 	
 	public void visible(Boolean b) {
 		frame.setVisible(b);
@@ -67,6 +68,8 @@ public class Login_View extends JFrame implements ObserverLogin{
         lblNewLabel_4.setBounds(0, 30, 86, 14);
         panel_1.add(lblNewLabel_4);
 
+
+
         JLabel lblNewLabel_5 = new JLabel("Mot de passe");
         lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
         lblNewLabel_5.setBounds(0, 86, 86, 14);
@@ -100,23 +103,28 @@ public class Login_View extends JFrame implements ObserverLogin{
 
         JLabel lblNewLabel = new JLabel("NOM");
         lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        lblNewLabel.setBounds(10, 11, 96, 20);
+        lblNewLabel.setBounds(10, 20, 96, 20);
 
         JLabel lblNewLabel_2 = new JLabel("Identifiant");
         lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-        lblNewLabel_2.setBounds(10, 96, 90, 14);
+        lblNewLabel_2.setBounds(10, 110, 90, 14);
+
+        JLabel lblNewLabel_10 = new JLabel("Pseudo");
+        lblNewLabel_10.setHorizontalAlignment(SwingConstants.CENTER);
+        lblNewLabel_10.setBounds(10, 80, 90, 14);
 
         JLabel lblNewLabel_1 = new JLabel("Pr\u00E9nom  ");
         lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-        lblNewLabel_1.setBounds(10, 57, 96, 14);
+        lblNewLabel_1.setBounds(10, 50, 96, 14);
         panel.setLayout(null);
         panel.add(lblNewLabel);
         panel.add(lblNewLabel_2);
         panel.add(lblNewLabel_1);
+        panel.add(lblNewLabel_10);
 
         JLabel lblNewLabel_3 = new JLabel("Mot de passe");
         lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
-        lblNewLabel_3.setBounds(10, 137, 90, 14);
+        lblNewLabel_3.setBounds(10, 140, 90, 14);
         panel.add(lblNewLabel_3);
 
         inscription = new JButton("Inscription");
@@ -125,24 +133,29 @@ public class Login_View extends JFrame implements ObserverLogin{
         panel.add(inscription);
 
         nomUser = new JTextField();
-        nomUser.setBounds(119, 11, 86, 20);
+        nomUser.setBounds(119, 20, 86, 20);
         panel.add(nomUser);
         nomUser.setColumns(10);
 
         prenomUser = new JTextField();
-        prenomUser.setBounds(119, 54, 86, 20);
+        prenomUser.setBounds(119, 50, 86, 20);
         panel.add(prenomUser);
         prenomUser.setColumns(10);
 
         identifiant = new JTextField();
-        identifiant.setBounds(119, 93, 86, 20);
+        identifiant.setBounds(119, 80, 86, 20);
         panel.add(identifiant);
         identifiant.setColumns(10);
 
         motDePasse = new JTextField();
-        motDePasse.setBounds(119, 134, 86, 20);
+        motDePasse.setBounds(119, 140, 86, 20);
         panel.add(motDePasse);
         motDePasse.setColumns(10);
+
+        pseudo = new JTextField();
+        pseudo.setBounds(119, 180, 86, 20);
+        panel.add(pseudo);
+        pseudo.setColumns(10);
 
         JLabel lblNewLabel_8 = new JLabel("Inscription");
         lblNewLabel_8.setHorizontalAlignment(SwingConstants.CENTER);
