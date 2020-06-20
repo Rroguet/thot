@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="presentation.model.AbstractModelConv" project="thot" 
     file="/thot/src/presentation/model/AbstractModelConv.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="339" width="260" x="2499" y="1089"/>    
+    <position height="339" width="260" x="2271" y="1151"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="presentation.view.Conv_View.newConvListener" project="thot" 
     file="/thot/src/presentation/view/Conv_View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="268" x="1516" y="771"/>    
+    <position height="116" width="268" x="196" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <interface id="3" language="java" name="presentation.ObserverLogin" project="thot" 
     file="/thot/src/presentation/ObserverLogin.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="96" width="155" x="1476" y="1468"/>    
+    <position height="96" width="155" x="767" y="2398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </interface>  
   <interface id="4" language="java" name="presentation.ObservableConv" project="thot" 
     file="/thot/src/presentation/ObservableConv.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="196" width="260" x="2415" y="1468"/>    
+    <position height="196" width="260" x="2105" y="1530"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </interface>  
   <class id="5" language="java" name="presentation.controller.AbstractLoginController" project="thot" 
     file="/thot/src/presentation/controller/AbstractLoginController.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="177" width="444" x="703" y="771"/>    
+    <position height="177" width="444" x="1023" y="1530"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <interface id="6" language="java" name="presentation.ObservableLogin" project="thot" 
     file="/thot/src/presentation/ObservableLogin.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="136" width="263" x="552" y="1468"/>    
+    <position height="136" width="263" x="483" y="2022"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </interface>  
   <class id="7" language="java" name="presentation.view.Login_View" project="thot" 
     file="/thot/src/presentation/view/Login_View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="356" width="283" x="1187" y="75"/>    
+    <position height="356" width="283" x="1184" y="755"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="presentation.model.Conversation" project="thot" 
     file="/thot/src/presentation/model/Conversation.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="336" width="447" x="1928" y="1468"/>    
+    <position height="336" width="447" x="2481" y="2022"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   </class>  
   <class id="9" language="java" name="business.SimpleClient" project="thot" file="/thot/src/business/SimpleClient.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="236" width="248" x="3126" y="771"/>    
+    <position height="236" width="248" x="2403" y="2398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -84,7 +84,7 @@
   </class>  
   <interface id="10" language="java" name="presentation.ObserverConv" project="thot" 
     file="/thot/src/presentation/ObserverConv.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="333" x="2975" y="1468"/>    
+    <position height="156" width="333" x="2105" y="1766"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,7 +93,7 @@
   </interface>  
   <class id="11" language="java" name="presentation.model.ModelLogin" project="thot" 
     file="/thot/src/presentation/model/ModelLogin.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="96" width="131" x="855" y="1468"/>    
+    <position height="96" width="131" x="312" y="2022"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="presentation.view.Conv_View.selectConv" project="thot" 
     file="/thot/src/presentation/view/Conv_View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="298" x="1824" y="771"/>    
+    <position height="116" width="298" x="2212" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   </class>  
   <class id="13" language="java" name="presentation.model.AbstractModelLogin" project="thot" 
     file="/thot/src/presentation/model/AbstractModelLogin.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="263" x="703" y="1089"/>    
+    <position height="156" width="263" x="504" y="1766"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -120,8 +120,8 @@
   </class>  
   <class id="14" language="java" name="business.LoginBusiness" project="thot" 
     file="/thot/src/business/LoginBusiness.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="141" width="418" x="81" y="62"/>    
-    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="136" width="411" x="1549" y="1766"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -129,7 +129,7 @@
   </class>  
   <class id="15" language="java" name="presentation.view.Login_View.inscriptionListener" project="thot" 
     file="/thot/src/presentation/view/Login_View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="268" x="395" y="771"/>    
+    <position height="116" width="268" x="828" y="1151"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -138,7 +138,7 @@
   </class>  
   <class id="16" language="java" name="presentation.model.ModelConv" project="thot" 
     file="/thot/src/presentation/model/ModelConv.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="220" x="2715" y="1468"/>    
+    <position height="156" width="220" x="2499" y="1530"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -147,7 +147,7 @@
   </class>  
   <class id="17" language="java" name="presentation.view.Conv_View.sendMessageListener" project="thot" 
     file="/thot/src/presentation/view/Conv_View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="268" x="2183" y="771"/>    
+    <position height="116" width="268" x="2660" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -156,7 +156,7 @@
   </class>  
   <class id="18" language="java" name="business.ConvBusiness" project="thot" file="/thot/src/business/ConvBusiness.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="216" width="303" x="652" y="75"/>    
+    <position height="216" width="303" x="2541" y="1766"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -165,7 +165,7 @@
   </class>  
   <class id="19" language="java" name="presentation.controller.AbstractConvController" project="thot" 
     file="/thot/src/presentation/controller/AbstractConvController.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="278" width="266" x="2820" y="771"/>    
+    <position height="278" width="266" x="2552" y="437"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -174,7 +174,7 @@
   </class>  
   <class id="20" language="java" name="presentation.model.Utilisateur" project="thot" 
     file="/thot/src/presentation/model/Utilisateur.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="336" width="361" x="2820" y="1089"/>    
+    <position height="336" width="361" x="2002" y="2398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -183,7 +183,7 @@
   </class>  
   <class id="21" language="java" name="presentation.view.Login_View.loginListener" project="thot" 
     file="/thot/src/presentation/view/Login_View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="268" x="1187" y="771"/>    
+    <position height="116" width="268" x="1136" y="1151"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -192,7 +192,7 @@
   </class>  
   <class id="22" language="java" name="presentation.Main" project="thot" file="/thot/src/presentation/Main.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="152" x="995" y="75"/>    
+    <position height="116" width="152" x="504" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -201,7 +201,7 @@
   </class>  
   <class id="23" language="java" name="presentation.view.Conv_View" project="thot" 
     file="/thot/src/presentation/view/Conv_View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="656" width="333" x="2350" y="75"/>    
+    <position height="656" width="333" x="2288" y="-415"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -210,7 +210,7 @@
   </class>  
   <class id="24" language="java" name="presentation.model.Message" project="thot" 
     file="/thot/src/presentation/model/Message.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="176" width="183" x="1928" y="1844"/>    
+    <position height="176" width="183" x="2949" y="2398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -219,7 +219,7 @@
   </class>  
   <class id="25" language="java" name="presentation.view.Conv_View.addUserListener" project="thot" 
     file="/thot/src/presentation/view/Conv_View.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="268" x="2491" y="771"/>    
+    <position height="116" width="268" x="1692" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -228,7 +228,7 @@
   </class>  
   <class id="26" language="java" name="presentation.controller.Login_controller" project="thot" 
     file="/thot/src/presentation/controller/Login_controller.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="287" x="1006" y="1089"/>    
+    <position height="116" width="287" x="1488" y="437"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -237,7 +237,7 @@
   </class>  
   <class id="27" language="java" name="presentation.controller.Conversation_controller" project="thot" 
     file="/thot/src/presentation/controller/Conversation_controller.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="136" width="269" x="3221" y="1089"/>    
+    <position height="136" width="269" x="2084" y="755"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -246,178 +246,432 @@
   </class>  
   <class id="28" language="java" name="presentation.Singletons" project="thot" 
     file="/thot/src/presentation/Singletons.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="176" width="248" x="3126" y="75"/>    
+    <position height="176" width="248" x="2193" y="2022"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <nesting id="29">    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="12"/>  
-  </nesting>  
-  <realization id="30">    
-    <bendpoint x="1485" y="771"/>    
-    <bendpoint x="1485" y="1089"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
-  <nesting id="31">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="21"/>  
-  </nesting>  
-  <association id="32">    
-    <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="33" name="conv"/>      
-      <multiplicity id="34" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="23" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="35">    
-    <end type="SOURCE" refId="27"/>    
-    <end type="TARGET" refId="19"/>  
-  </generalization>  
-  <association id="36">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="37" name="alc"/>      
-      <multiplicity id="38" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="39">    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="40" name="acc"/>      
-      <multiplicity id="41" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="19" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="42">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="43" name="conv"/>      
-      <multiplicity id="44" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="45">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="46" name="listObserver"/>      
-      <multiplicity id="47" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="48">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="49" name="am"/>      
-      <multiplicity id="50" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="51">    
-    <bendpoint x="2152" y="771"/>    
-    <bendpoint x="2152" y="1089"/>    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="52" name="c"/>      
-      <multiplicity id="53" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="54">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="55" name="log"/>      
-      <multiplicity id="56" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="57">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="6"/>  
-  </realization>  
-  <association id="58">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="59" name="listObserver"/>      
-      <multiplicity id="60" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <nesting id="61">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="15"/>  
-  </nesting>  
-  <association id="62">    
-    <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="63" name="user"/>      
-      <multiplicity id="64" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="20" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="65">    
-    <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="66" name="amc"/>      
-      <multiplicity id="67" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <nesting id="68">    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="17"/>  
-  </nesting>  
-  <generalization id="69">    
-    <end type="SOURCE" refId="16"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="70">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="71">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="72" name="messages"/>      
-      <multiplicity id="73" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="24" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <nesting id="74">    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="25"/>  
-  </nesting>  
-  <realization id="75">    
-    <bendpoint x="2789" y="771"/>    
-    <bendpoint x="2789" y="1089"/>    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="10"/>  
-  </realization>  
-  <association id="76">    
+  <association id="29">    
     <end type="SOURCE" refId="28" navigable="false">      
-      <attribute id="77" name="client"/>      
-      <multiplicity id="78" minimum="0" maximum="1"/>    
+      <attribute id="30" name="client"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <nesting id="79">    
+  <dependency id="32">    
+    <bendpoint x="2074" y="1766"/>    
+    <bendpoint x="2074" y="2022"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="34">    
+    <bendpoint x="776" y="755"/>    
+    <bendpoint x="776" y="1151"/>    
+    <bendpoint x="776" y="1530"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <nesting id="35">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="21"/>  
+  </nesting>  
+  <realization id="36">    
+    <bendpoint x="797" y="1151"/>    
+    <bendpoint x="797" y="1530"/>    
+    <bendpoint x="797" y="1766"/>    
+    <bendpoint x="797" y="2022"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <dependency id="37">    
+    <bendpoint x="2958" y="2022"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <dependency id="38">    
+    <bendpoint x="2749" y="755"/>    
+    <bendpoint x="2749" y="1151"/>    
+    <bendpoint x="2749" y="1530"/>    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <dependency id="40">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="41">    
+    <bendpoint x="2510" y="1766"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="42">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <realization id="43">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <association id="44">    
+    <bendpoint x="1455" y="1151"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="45" name="log"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="48" name="messages"/>      
+      <multiplicity id="49" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="50">    
+    <bendpoint x="2540" y="281"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="51" name="acc"/>      
+      <multiplicity id="52" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="53">    
+    <bendpoint x="2561" y="755"/>    
+    <bendpoint x="2561" y="1151"/>    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="54">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="55" name="am"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="57">    
     <end type="SOURCE" refId="23"/>    
     <end type="TARGET" refId="2"/>  
   </nesting>  
-  <realization id="80">    
+  <dependency id="58">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="59">    
+    <bendpoint x="513" y="437"/>    
+    <bendpoint x="513" y="755"/>    
+    <bendpoint x="513" y="1151"/>    
+    <bendpoint x="513" y="1530"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <association id="60">    
+    <bendpoint x="2561" y="281"/>    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="61" name="conv"/>      
+      <multiplicity id="62" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="63">    
+    <bendpoint x="2011" y="1151"/>    
+    <bendpoint x="2011" y="1530"/>    
+    <bendpoint x="2011" y="1766"/>    
+    <bendpoint x="2011" y="2022"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <nesting id="64">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <realization id="65">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
-  <generalization id="81">    
+  <dependency id="66">    
+    <bendpoint x="2074" y="1530"/>    
+    <bendpoint x="2053" y="1766"/>    
+    <bendpoint x="2053" y="2022"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="67">    
+    <bendpoint x="1476" y="1151"/>    
+    <bendpoint x="1497" y="1530"/>    
+    <bendpoint x="1497" y="1766"/>    
+    <bendpoint x="1497" y="2022"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="68">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="69">    
+    <bendpoint x="2874" y="755"/>    
+    <bendpoint x="2874" y="1151"/>    
+    <bendpoint x="2874" y="1530"/>    
+    <bendpoint x="2874" y="1766"/>    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="70">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <nesting id="71">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="25"/>  
+  </nesting>  
+  <association id="72">    
+    <bendpoint x="2468" y="1530"/>    
+    <bendpoint x="2468" y="1766"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="73" name="conv"/>      
+      <multiplicity id="74" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="75">    
+    <bendpoint x="1990" y="281"/>    
+    <bendpoint x="1990" y="437"/>    
+    <bendpoint x="1990" y="755"/>    
+    <bendpoint x="1990" y="1151"/>    
+    <bendpoint x="1990" y="1530"/>    
+    <bendpoint x="1990" y="1766"/>    
+    <bendpoint x="1990" y="2022"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="76">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="77">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <realization id="78">    
+    <bendpoint x="2053" y="281"/>    
+    <bendpoint x="2053" y="437"/>    
+    <bendpoint x="2053" y="755"/>    
+    <bendpoint x="2053" y="1151"/>    
+    <bendpoint x="2053" y="1530"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <association id="79">    
+    <bendpoint x="2383" y="755"/>    
+    <bendpoint x="2208" y="1151"/>    
+    <bendpoint x="2032" y="1530"/>    
+    <bendpoint x="2032" y="1766"/>    
+    <bendpoint x="2032" y="2022"/>    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="80" name="user"/>      
+      <multiplicity id="81" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="82">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="83">    
+    <bendpoint x="2181" y="437"/>    
+    <bendpoint x="2181" y="281"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <generalization id="84">    
+    <bendpoint x="1497" y="755"/>    
+    <bendpoint x="1497" y="1151"/>    
     <end type="SOURCE" refId="26"/>    
     <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <dependency id="85">    
+    <bendpoint x="1518" y="755"/>    
+    <bendpoint x="1518" y="1151"/>    
+    <bendpoint x="1518" y="1530"/>    
+    <bendpoint x="1518" y="1766"/>    
+    <bendpoint x="1518" y="2022"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <association id="86">    
+    <bendpoint x="1434" y="1151"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="87" name="alc"/>      
+      <multiplicity id="88" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="89">    
+    <bendpoint x="2095" y="2022"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="90">    
+    <bendpoint x="2895" y="755"/>    
+    <bendpoint x="2937" y="1151"/>    
+    <bendpoint x="2937" y="1530"/>    
+    <bendpoint x="2979" y="1766"/>    
+    <bendpoint x="2979" y="2022"/>    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <generalization id="91">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="92">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="93">    
+    <bendpoint x="417" y="437"/>    
+    <bendpoint x="417" y="755"/>    
+    <bendpoint x="417" y="1151"/>    
+    <bendpoint x="417" y="1530"/>    
+    <bendpoint x="417" y="1766"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <association id="94">    
+    <bendpoint x="2420" y="755"/>    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="95" name="amc"/>      
+      <multiplicity id="96" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="97">    
+    <bendpoint x="1476" y="1766"/>    
+    <bendpoint x="1476" y="2022"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="98">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="99">    
+    <bendpoint x="1785" y="2022"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="100">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="101">    
+    <bendpoint x="2916" y="437"/>    
+    <bendpoint x="2916" y="755"/>    
+    <bendpoint x="2916" y="1151"/>    
+    <bendpoint x="2916" y="1530"/>    
+    <bendpoint x="2916" y="1766"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="102">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="103">    
+    <bendpoint x="3000" y="281"/>    
+    <bendpoint x="3000" y="437"/>    
+    <bendpoint x="3000" y="755"/>    
+    <bendpoint x="3000" y="1151"/>    
+    <bendpoint x="3000" y="1530"/>    
+    <bendpoint x="3000" y="1766"/>    
+    <bendpoint x="3000" y="2022"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <dependency id="104">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <nesting id="105">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="15"/>  
+  </nesting>  
+  <nesting id="106">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="17"/>  
+  </nesting>  
+  <dependency id="107">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="108">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="109">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="110">    
+    <bendpoint x="2489" y="1766"/>    
+    <bendpoint x="2162" y="2022"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <association id="111">    
+    <bendpoint x="2958" y="281"/>    
+    <bendpoint x="2958" y="437"/>    
+    <bendpoint x="2958" y="755"/>    
+    <bendpoint x="2958" y="1151"/>    
+    <bendpoint x="2958" y="1530"/>    
+    <bendpoint x="2958" y="1766"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="112" name="c"/>      
+      <multiplicity id="113" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="114">    
+    <bendpoint x="2395" y="1530"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="115" name="listObserver"/>      
+      <multiplicity id="116" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="117">    
+    <bendpoint x="776" y="2022"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="118" name="listObserver"/>      
+      <multiplicity id="119" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="120">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="19"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
