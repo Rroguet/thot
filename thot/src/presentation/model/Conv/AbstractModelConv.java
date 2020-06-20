@@ -1,10 +1,12 @@
-package presentation.model;
+package presentation.model.Conv;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import presentation.ObservableConv;
-import presentation.ObserverConv;
+import presentation.ObservateurConv.ObservableConv;
+import presentation.ObservateurConv.ObserverConv;
+import presentation.model.Conversation;
+import presentation.model.Utilisateur;
 
 public abstract class AbstractModelConv implements ObservableConv{
 	protected Conversation conv = null;

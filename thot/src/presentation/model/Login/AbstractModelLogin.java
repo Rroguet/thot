@@ -1,10 +1,10 @@
-package presentation.model;
+package presentation.model.Login;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import presentation.ObservableLogin;
-import presentation.ObserverLogin;
+import presentation.ObservateurLogin.ObservableLogin;
+import presentation.ObservateurLogin.ObserverLogin;
 
 public abstract class AbstractModelLogin implements ObservableLogin{
 	private List<ObserverLogin> listObserver = new ArrayList<ObserverLogin>();

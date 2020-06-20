@@ -1,15 +1,15 @@
-package presentation.controller;
+package presentation.controller.Conv;
 
 import java.util.UUID;
 
 import javax.swing.Timer;
 
 import business.ConvBusiness;
-import presentation.model.AbstractModelConv;
 import presentation.model.Conversation;
 import presentation.model.Message;
-import presentation.model.ModelConv;
 import presentation.model.Utilisateur;
+import presentation.model.Conv.AbstractModelConv;
+import presentation.model.Conv.ModelConv;
 import presentation.view.Conv_View;
 /**
  * Abstract Controller for conversation related actions.

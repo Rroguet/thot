@@ -1,4 +1,4 @@
-package presentation;
+package presentation.ObservateurLogin;
 /**
  * Interface defining methods for login observers.
  * @author jules

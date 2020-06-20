@@ -1,6 +1,7 @@
-package presentation.model;
+package presentation.model.Conv;
 
 import business.ConvBusiness;
+import presentation.model.Utilisateur;
 
 public class ModelConv extends AbstractModelConv{
 	public void setListConv(Utilisateur user){

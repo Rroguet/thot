@@ -1,4 +1,4 @@
-package presentation;
+package presentation.ObservateurConv;
 
 import presentation.model.Utilisateur;
 /**

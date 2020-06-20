@@ -12,14 +12,15 @@ import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import presentation.ObserverLogin;
-import presentation.controller.AbstractLoginController;
+import presentation.ObservateurLogin.ObserverLogin;
+import presentation.controller.Login.AbstractLoginController;
 import presentation.model.Utilisateur;
 /**
  * GUI displaying Login and registration panel.
  * @author jules
  *
  */
+@SuppressWarnings("serial")
 public class Login_View extends JFrame implements ObserverLogin{
 	private AbstractLoginController alc;
 	private JFrame frame = new JFrame("Thot");

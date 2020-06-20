@@ -25,8 +25,8 @@ import javax.swing.JTextField;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import presentation.ObserverConv;
-import presentation.controller.AbstractConvController;
+import presentation.ObservateurConv.ObserverConv;
+import presentation.controller.Conv.AbstractConvController;
 import presentation.model.Conversation;
 import presentation.model.Message;
 import presentation.model.Utilisateur;
@@ -35,6 +35,7 @@ import presentation.model.Utilisateur;
  * @author jules
  *
  */
+@SuppressWarnings("serial")
 public class Conv_View extends JFrame implements ObserverConv{
 	private AbstractConvController acc;
 	private JFrame frame = new JFrame("Thot");
