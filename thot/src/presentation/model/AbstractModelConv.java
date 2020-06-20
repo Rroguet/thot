@@ -7,16 +7,17 @@ import presentation.ObservableConv;
 import presentation.ObserverConv;
 
 public abstract class AbstractModelConv implements ObservableConv{
-	protected Utilisateur user = null;
 	protected Conversation conv = null;
+	protected List<String> pseudoMember = null;
 	protected List<String> listConv = null;
+	protected int numberConv;
 	private List<ObserverConv> listObserver = new ArrayList<ObserverConv>();
 	
-	public abstract void setListConv();
+	public abstract void setListConv(Utilisateur user);
+	
+	public abstract void realodConv(Utilisateur user);
 		
-	public abstract void setUser(Utilisateur u);
-		
-	public abstract void setConv(int idList);
+	public abstract void setConv(int idList, Utilisateur user);
 	
 	public void addObserver(ObserverConv obs) {
 		this.listObserver.add(obs);
@@ -28,7 +29,7 @@ public abstract class AbstractModelConv implements ObservableConv{
 		}		
 	}
 	
-	public void getUserInfo() {
+	public void getUserInfo(Utilisateur user) {
 		for(ObserverConv obs : listObserver) {
 			obs.updateUserInfo(user);
 		}		
@@ -42,7 +43,7 @@ public abstract class AbstractModelConv implements ObservableConv{
 	
 	public void getConv() {
 		for(ObserverConv obs : listObserver) {
-			obs.updateConv(conv);
+			obs.updateConv(conv, pseudoMember);
 		}
 	}
 	

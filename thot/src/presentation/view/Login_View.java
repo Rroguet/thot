@@ -1,58 +1,43 @@
-/*package presentation.view;
+package presentation.view;
 
+import java.awt.Panel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import java.awt.EventQueue;
-
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JSplitPane;
-import java.awt.BorderLayout;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-import java.awt.Panel;
-import javax.swing.JLabel;
-import javax.swing.BoxLayout;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-import java.awt.CardLayout;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import net.miginfocom.swing.MigLayout;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.JButton;
-import javax.swing.JTextPane;
 
-public class FirstPage_GUI {
-    private JFrame frame;
-    private JTextField textField;
-    private JTextField textField_1;
-    private JTextField textField_2;
-    private JTextField textField_3;
-    private JTextField textField_4;
-    private JTextField textField_5;
+import presentation.ObserverLogin;
+import presentation.controller.AbstractLoginController;
+import presentation.model.Utilisateur;
 
-
-	/*public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					InscriptionPage window = new InscriptionPage();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+public class Login_View extends JFrame implements ObserverLogin{
+	private AbstractLoginController alc;
+	private JFrame frame = new JFrame("Thot");
+	private JButton login;
+	private JButton inscription;
+	private JTextField userLogin = new JTextField();
+	private JTextField userPassWord = new JTextField();
+	
+	JTextField loginUser;
+	JTextField passWordUser;
+	JTextField nomUser;
+	JTextField prenomUser;
+	JTextField identifiant;
+	JTextField motDePasse;
+	
+	public void visible(Boolean b) {
+		frame.setVisible(b);
 	}
-
-
-    public InscriptionPage() {
-        initialize();
-    }
-
-
-    private void initialize() {
-        frame = new JFrame();
+	
+	public Login_View(AbstractLoginController alc) {
+		this.alc = alc;
+		
         frame.setBounds(100, 100, 450, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
@@ -87,19 +72,20 @@ public class FirstPage_GUI {
         lblNewLabel_5.setBounds(0, 86, 86, 14);
         panel_1.add(lblNewLabel_5);
 
-        JButton btnNewButton = new JButton("Connexion");
-        btnNewButton.setBounds(0, 171, 86, 23);
-        panel_1.add(btnNewButton);
+        login = new JButton("Connexion");
+        login.setBounds(0, 171, 86, 23);
+        login.addActionListener(new loginListener());
+        panel_1.add(login);
 
-        textField = new JTextField();
-        textField.setBounds(0, 55, 86, 20);
-        panel_1.add(textField);
-        textField.setColumns(10);
+        loginUser = new JTextField();
+        loginUser.setBounds(0, 55, 86, 20);
+        panel_1.add(loginUser);
+        loginUser.setColumns(10);
 
-        textField_1 = new JTextField();
-        textField_1.setBounds(0, 111, 86, 20);
-        panel_1.add(textField_1);
-        textField_1.setColumns(10);
+        passWordUser = new JTextField();
+        passWordUser.setBounds(0, 111, 86, 20);
+        panel_1.add(passWordUser);
+        passWordUser.setColumns(10);
 
         JLabel lblNewLabel_7 = new JLabel("      Connexion      ");
         lblNewLabel_7.setHorizontalAlignment(SwingConstants.CENTER);
@@ -133,29 +119,30 @@ public class FirstPage_GUI {
         lblNewLabel_3.setBounds(10, 137, 90, 14);
         panel.add(lblNewLabel_3);
 
-        JButton btnNewButton_1 = new JButton("Connexion");
-        btnNewButton_1.setBounds(105, 171, 114, 23);
-        panel.add(btnNewButton_1);
+        inscription = new JButton("Inscription");
+        inscription.setBounds(105, 171, 114, 23);
+        inscription.addActionListener(new inscriptionListener());
+        panel.add(inscription);
 
-        textField_2 = new JTextField();
-        textField_2.setBounds(119, 11, 86, 20);
-        panel.add(textField_2);
-        textField_2.setColumns(10);
+        nomUser = new JTextField();
+        nomUser.setBounds(119, 11, 86, 20);
+        panel.add(nomUser);
+        nomUser.setColumns(10);
 
-        textField_3 = new JTextField();
-        textField_3.setBounds(119, 54, 86, 20);
-        panel.add(textField_3);
-        textField_3.setColumns(10);
+        prenomUser = new JTextField();
+        prenomUser.setBounds(119, 54, 86, 20);
+        panel.add(prenomUser);
+        prenomUser.setColumns(10);
 
-        textField_4 = new JTextField();
-        textField_4.setBounds(119, 93, 86, 20);
-        panel.add(textField_4);
-        textField_4.setColumns(10);
+        identifiant = new JTextField();
+        identifiant.setBounds(119, 93, 86, 20);
+        panel.add(identifiant);
+        identifiant.setColumns(10);
 
-        textField_5 = new JTextField();
-        textField_5.setBounds(119, 134, 86, 20);
-        panel.add(textField_5);
-        textField_5.setColumns(10);
+        motDePasse = new JTextField();
+        motDePasse.setBounds(119, 134, 86, 20);
+        panel.add(motDePasse);
+        motDePasse.setColumns(10);
 
         JLabel lblNewLabel_8 = new JLabel("Inscription");
         lblNewLabel_8.setHorizontalAlignment(SwingConstants.CENTER);
@@ -165,5 +152,22 @@ public class FirstPage_GUI {
         lblNewLabel_6.setHorizontalAlignment(SwingConstants.CENTER);
         splitPane.setLeftComponent(lblNewLabel_6);
     }
+	
+	
+	public void notif(String string) {
+		JOptionPane.showMessageDialog(null, string);
+	}
+	public void userObs(Utilisateur u) {System.out.println("blablabla");}
+	
+	class loginListener implements ActionListener {
+		public void actionPerformed(ActionEvent b) {
+			alc.Login(loginUser.getText(), passWordUser.getText());
+		}
+	}
+	
+	class inscriptionListener implements ActionListener {
+		public void actionPerformed(ActionEvent b) {
+			
+		}
+	}
 }
-*/

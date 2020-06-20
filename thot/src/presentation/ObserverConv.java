@@ -9,5 +9,5 @@ public interface ObserverConv {
 	public void notif(String string);
 	public void updateUserInfo(Utilisateur u);
 	public void updateListConv(List<String> l);
-	public void updateConv(Conversation c);
+	public void updateConv(Conversation c, List<String> member);
 }

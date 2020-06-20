@@ -1,17 +1,17 @@
 package presentation.controller;
 
 import presentation.model.*;
-import presentation.view.viewtest;
+import presentation.view.Login_View;
 import business.LoginBusiness;
 
 public abstract class AbstractLoginController {
 	protected AbstractModelLogin am;
-	protected viewtest log;
+	protected Login_View log;
 	protected boolean connected = false;
 	
 	public AbstractLoginController(AbstractModelLogin am) {
 		this.am = am;
-		log = new viewtest(this);
+		log = new Login_View(this);
 		log.visible(true);
 		am.removeObserver();
 		am.addObserver(log);

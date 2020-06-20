@@ -1,31 +1,74 @@
 package presentation.controller;
 
+import java.util.UUID;
+
+import javax.swing.Timer;
+
+import business.ConvBusiness;
 import presentation.model.AbstractModelConv;
+import presentation.model.Conversation;
+import presentation.model.Message;
 import presentation.model.ModelConv;
 import presentation.model.Utilisateur;
-import presentation.view.viewConvtest;
+import presentation.view.Conv_View;
 
 public abstract class AbstractConvController {
 	protected AbstractModelConv amc;
-	protected viewConvtest conv;
+	protected Conv_View conv;
+	protected Utilisateur user;
+	private Timer timer;
 	
 	public AbstractConvController(Utilisateur user) {
 		amc = new ModelConv();
-		amc.setUser(user);
-		conv = new viewConvtest(this);
+		this.user = user;
+		conv = new Conv_View(this);
 		amc.removeObserver();
 		amc.addObserver(conv);
 		control();
 	}
 	
 	public void selectConv(int element) {
-		amc.setConv(element);
+		if(element<0) return;
+		System.out.println("element : "+element);
+		amc.setConv(element, user);
 		amc.getConv();
+		timer = createTimer();
+        timer.start();
 	}
 	
 	public void convNull() {
 		amc.notifyObserver("erreur conv non trouvé");
 	}
 	
+	public void addUser(String pseudo, UUID id) {
+		if(ConvBusiness.addUser(pseudo, id)) {
+			amc.realodConv(user);
+			amc.getConv();
+			amc.notifyObserver("utilisateur ajouter au groupe");
+		}else amc.notifyObserver("utilisateur non trouvé");
+	}
+	
+	public void newConv(String name) {
+		Conversation c = new Conversation(name, user.getId(), null, null);
+		if(ConvBusiness.newConv(c)){
+			user.addConv(c.getConvId());
+			control();
+			amc.notifyObserver("conversation créé");
+		}else amc.notifyObserver("erreur dans la création");
+	}
+	
+	public void newMessage(String str, UUID id) {
+		if(ConvBusiness.sendMessage(new Message(user.getId(),str), id)){
+			amc.realodConv(user);
+			amc.getConv();
+		}else amc.notifyObserver("erreur dans l'envoie");
+	}
+	
+	public void updateConv(){
+		amc.realodConv(user);
+		amc.getConv();
+	}
+	
+	abstract Timer createTimer();
 	abstract void control();
 }
