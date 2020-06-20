@@ -21,16 +21,14 @@ public class Login_View extends JFrame implements ObserverLogin{
 	private JFrame frame = new JFrame("Thot");
 	private JButton login;
 	private JButton inscription;
-	private JTextField userLogin = new JTextField();
-	private JTextField userPassWord = new JTextField();
 	
-	JTextField loginUser;
-	JTextField passWordUser;
-	JTextField nomUser;
-	JTextField prenomUser;
-	JTextField identifiant;
-	JTextField motDePasse;
-    JTextField pseudo;
+	private JTextField loginUser;
+	private JTextField passWordUser;
+	private JTextField nomUser;
+	private JTextField prenomUser;
+	private JTextField identifiant;
+	private JTextField motDePasse;
+    private JTextField pseudo;
 	
 	public void visible(Boolean b) {
 		frame.setVisible(b);
@@ -143,7 +141,7 @@ public class Login_View extends JFrame implements ObserverLogin{
         prenomUser.setColumns(10);
 
         identifiant = new JTextField();
-        identifiant.setBounds(119, 80, 86, 20);
+        identifiant.setBounds(119, 110, 86, 20);
         panel.add(identifiant);
         identifiant.setColumns(10);
 
@@ -153,7 +151,7 @@ public class Login_View extends JFrame implements ObserverLogin{
         motDePasse.setColumns(10);
 
         pseudo = new JTextField();
-        pseudo.setBounds(119, 180, 86, 20);
+        pseudo.setBounds(119, 80, 86, 20);
         panel.add(pseudo);
         pseudo.setColumns(10);
 
@@ -180,7 +178,7 @@ public class Login_View extends JFrame implements ObserverLogin{
 	
 	class inscriptionListener implements ActionListener {
 		public void actionPerformed(ActionEvent b) {
-			
+			alc.inscriptionSendServer(identifiant.getText(), motDePasse.getText(), prenomUser.getText(), nomUser.getText(), pseudo.getText());
 		}
 	}
 }

@@ -24,7 +24,7 @@ public abstract class AbstractLoginController {
 	}
 	
 	public void inscriptionSendServer(String login,String passWord, String firstName, String lastName, String userName) {
-		if(firstName == null || lastName == null || userName==null) {
+		if(firstName == null || lastName == null || userName==null ||login==null || passWord==null) {
 			am.notifyObserver("Veillez renseigner tous les champs");
 			return;
 		}
