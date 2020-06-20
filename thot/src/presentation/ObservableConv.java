@@ -1,7 +1,11 @@
 package presentation;
 
 import presentation.model.Utilisateur;
-
+/**
+ * Interface defining methods for observable conversation objects.
+ * @author jules
+ *
+ */
 public interface ObservableConv {
 	public void addObserver(ObserverConv obs);
 	public void removeObserver();

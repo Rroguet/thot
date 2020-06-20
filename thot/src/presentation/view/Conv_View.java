@@ -30,7 +30,11 @@ import presentation.controller.AbstractConvController;
 import presentation.model.Conversation;
 import presentation.model.Message;
 import presentation.model.Utilisateur;
-
+/**
+ * GUI displaying conversation panel, user info etc..
+ * @author jules
+ *
+ */
 public class Conv_View extends JFrame implements ObserverConv{
 	private AbstractConvController acc;
 	private JFrame frame = new JFrame("Thot");

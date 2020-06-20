@@ -11,7 +11,11 @@ import presentation.model.Message;
 import presentation.model.ModelConv;
 import presentation.model.Utilisateur;
 import presentation.view.Conv_View;
-
+/**
+ * Abstract Controller for conversation related actions.
+ * @author jules
+ *
+ */
 public abstract class AbstractConvController {
 	protected AbstractModelConv amc;
 	protected Conv_View conv;

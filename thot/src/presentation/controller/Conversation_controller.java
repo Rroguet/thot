@@ -6,7 +6,11 @@ import java.awt.event.ActionListener;
 import javax.swing.Timer;
 
 import presentation.model.Utilisateur;
-
+/**
+ * Controller for conversation related actions.
+ * @author jules
+ *
+ */
 public class Conversation_controller  extends AbstractConvController{
 	public Conversation_controller(Utilisateur user) {
 		super(user);

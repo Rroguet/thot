@@ -8,8 +8,17 @@ import java.util.UUID;
 import presentation.Singletons;
 import presentation.model.Conversation;
 import presentation.model.Message;
-
+/**
+ * This class communicates all actions concerning Conversations to the server.
+ * @author jules
+ *
+ */
 public class ConvBusiness {
+	/**
+	 * List of Conversation names for the user
+	 * @param userId 
+	 * @return StringList
+	 */
 	public static List<String> listConv(UUID userId) {
 		try{
 			Singletons.getOutput().writeObject("getConvNames");
@@ -28,7 +37,11 @@ public class ConvBusiness {
 		}
 		return null;
 	}
-	
+	/**
+	 * Returns a conversation object from it's ID.
+	 * @param convId
+	 * @return Conversation
+	 */
 	public static Conversation getConv(UUID convId) {
 		try{
 			Singletons.getOutput().writeObject("getConv");
@@ -46,7 +59,11 @@ public class ConvBusiness {
 		}
 		return null;
 	}
-	
+	/**
+	 * Returns the usernames of members corresponding to the ID list.
+	 * @param id List of user IDs
+	 * @return StringList
+	 */
 	public static List<String> getMember(List<UUID> id) {
 		try{
 			Singletons.getOutput().writeObject("getMembers");
@@ -65,7 +82,12 @@ public class ConvBusiness {
 		}
 		return null;
 	}
-	
+	/**
+	 * Adds a user to the conversation, returns boolean for success status.
+	 * @param pseudo
+	 * @param currentConv
+	 * @return Boolean
+	 */
 	public static Boolean addUser(String pseudo, UUID currentConv) {
 		try{
 			Singletons.getOutput().writeObject("addUser");
@@ -83,7 +105,12 @@ public class ConvBusiness {
 		}
 		return false;
 	}
-	
+	/**
+	 * Adds a new conversation to the database.
+	 * Returns boolean for success status.
+	 * @param c 
+	 * @return Boolean
+	 */
 	public static Boolean newConv(Conversation c) {
 		try{
 			Singletons.getOutput().writeObject("newConv");
@@ -100,7 +127,13 @@ public class ConvBusiness {
 		}
 		return false;
 	}
-	
+	/**
+	 * Sends message to the server.
+	 * Returns boolean for success status
+	 * @param m
+	 * @param idConv
+	 * @return boolean
+	 */
 	public static Boolean sendMessage(Message m, UUID idConv) {
 		try{
 			Singletons.getOutput().writeObject("newMessage");

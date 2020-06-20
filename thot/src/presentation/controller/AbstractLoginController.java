@@ -3,7 +3,11 @@ package presentation.controller;
 import presentation.model.*;
 import presentation.view.Login_View;
 import business.LoginBusiness;
-
+/**
+ * Abstract Controller for login related actions.
+ * @author jules
+ *
+ */
 public abstract class AbstractLoginController {
 	protected AbstractModelLogin am;
 	protected Login_View log;

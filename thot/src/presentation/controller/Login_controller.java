@@ -2,7 +2,11 @@ package presentation.controller;
 
 import presentation.model.AbstractModelLogin;
 import presentation.model.Utilisateur;
-
+/**
+ * Controller for login related actions.
+ * @author jules
+ *
+ */
 public class Login_controller extends AbstractLoginController{
 	public Login_controller(AbstractModelLogin am) {
 		super(am);

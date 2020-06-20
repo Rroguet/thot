@@ -4,7 +4,12 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import business.SimpleClient;
-
+/**
+ * Design pattern singleton.
+ * Allows to avoid creating many instances of an object if we only need one.
+ * @author jules
+ *
+ */
 public class Singletons {
 	private static SimpleClient client;
 	private static ObjectOutputStream output;

@@ -3,7 +3,11 @@ import java.io.*;
 import java.net.*;
 
 import presentation.model.Utilisateur; 
-
+/**
+ * Handles client Connection and Deconnection
+ * @author jules
+ *
+ */
 public class SimpleClient {
 	private ObjectOutputStream output;
 	private ObjectInputStream input;
