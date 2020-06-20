@@ -18,7 +18,7 @@ public class Conversation_controller  extends AbstractConvController{
 	          updateConv();
 	        }
 	      };
-	    return new Timer(3000, action);
+	    return new Timer(1000, action);
 	  } 
 	
 	public void control() {

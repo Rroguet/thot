@@ -24,6 +24,7 @@ public abstract class AbstractConvController {
 		conv = new Conv_View(this);
 		amc.removeObserver();
 		amc.addObserver(conv);
+		System.out.println("nb conv: "+user.getConversationList().size());
 		control();
 	}
 	

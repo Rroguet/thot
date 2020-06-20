@@ -298,6 +298,7 @@ public class Conv_View extends JFrame implements ObserverConv{
 	class sendMessageListener implements ActionListener {
 		public void actionPerformed(ActionEvent b) {
 			acc.newMessage(messageUser.getText(), c.getConvId());
+			messageUser.setText("");
 		}
 	}
 }
